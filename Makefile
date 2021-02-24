@@ -1,4 +1,4 @@
-NAME = 'docker-kustomize-kubeval'
+NAME = 'kustoval'
 
 build:
 	docker build -t ${NAME} .
