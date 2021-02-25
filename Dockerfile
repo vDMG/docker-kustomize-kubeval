@@ -4,6 +4,9 @@ ENV KUBEVAL_VERSION=0.15.0 \
 
 WORKDIR /app
 
+COPY config-ssh /root/.ssh/config
+RUN chmod -R 700 /root/.ssh/
+
 RUN apk add --no-cache \
       curl \
       wget \
