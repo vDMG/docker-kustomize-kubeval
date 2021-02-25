@@ -7,7 +7,8 @@ WORKDIR /app
 RUN apk add --no-cache \
       curl \
       wget \
-      git
+      git \
+      openssh
 
 RUN wget -q https://github.com/instrumenta/kubeval/releases/download/${KUBEVAL_VERSION}/kubeval-linux-amd64.tar.gz \
     && tar xf kubeval-linux-amd64.tar.gz \
